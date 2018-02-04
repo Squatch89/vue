@@ -17,7 +17,7 @@ export default new Router({
       path: '/test',
       name: 'TestWorld',
       component: TestWorld
-    }
+    },
     {
       path:'/',
       name: 'ShoppingCart',
