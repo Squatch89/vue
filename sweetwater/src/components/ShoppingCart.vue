@@ -14,7 +14,6 @@
       <div class="Price">
         //shows price of item
         
-        
       </div>
       <div class="subTotal">
         //shows price of all items in cart
@@ -24,7 +23,12 @@
 
 <script>
     export default {
-        name: "shopping-cart"
+        name: "ShoppingCart",
+      data () {
+          return {
+            //something
+          }
+      }
     }
 </script>
 
