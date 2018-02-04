@@ -28,7 +28,9 @@
           <td><img :src="item.image" :alt="item.productName"/></td>
           <td>
             Product Name: {{item.productName}}
+            <br/>
             Manufacturer: {{item.manufacturer}}
+          <br/>
             Description: {{item.description}}
           </td>
           <td>
@@ -37,6 +39,13 @@
           <td>
             {{item.price}}
           </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>{{$store.state.total}}</td>
         </tr>
         </tbody>
       </table>
@@ -70,7 +79,8 @@
     name: "ShoppingCart",
     data() {
       return {
-        itemInfo
+        itemInfo,
+        total: this.$store.state.total
       };
     }
   }
