@@ -23,8 +23,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr v-for="item in itemInfo">
-          <th scope="row">1</th>
+        <tr v-for="(item, index) in itemInfo">
+          <th scope="row">{{index + 1}}</th>
           <td><img :src="item.image" :alt="item.productName"/></td>
           <td>
             Product Name: {{item.productName}}
